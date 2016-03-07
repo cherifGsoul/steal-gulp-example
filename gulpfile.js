@@ -4,8 +4,7 @@ var stealTools = require('steal-tools');
 gulp.task('scripts',function(){
   stealTools.export({
     system: {
-      config: "package.json!npm",
-      main:'src/js/main'
+      config: "package.json!npm"
     },
     options: {
       verbose:true
@@ -21,7 +20,7 @@ gulp.task('scripts',function(){
 gulp.task('export',function(){
   stealTools.export({
     system: {
-      config: "package.json!npm",
+      config: "package.json!npm"
     },
     options: {
       sourceMaps: true,
