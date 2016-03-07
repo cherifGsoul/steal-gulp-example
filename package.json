@@ -23,7 +23,7 @@
   "system":{
     "npmAlgorithm":"flat",
     "directories": {
-      "lib": "src"
+      "lib": "src/js"
     },
     "main":"main"
   }
