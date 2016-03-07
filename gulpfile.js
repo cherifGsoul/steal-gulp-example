@@ -5,6 +5,7 @@ gulp.task('scripts',function(){
   stealTools.export({
     system: {
       config: "package.json!npm",
+      main:'src/js/main'
     },
     options: {
       verbose:true

@@ -1,13 +1,17 @@
 {
-  "name": "canpg",
+  "name": "steal-gulp",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Steal with gulp",
+  "main": "dist/cjs/main",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp test"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Cherif BOUCHELAGHEM",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cherifGsoul/steal-gulp-example.git"
+  },
+  "license": "MIT",
   "dependencies": {
     "can": "^2.3.19"
   },
