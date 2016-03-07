@@ -38,9 +38,21 @@ gulp.task('export',function(){
   });
 });
 
+gulp.task('stealBuild',function(){
+   gulp.src('src/js/**/*.js',function(){
+    stealTools.build({
+        config: "package.json!npm",
+        "main":"src/js/main"
+      },{
+        sourceMaps: true,
+        minify:true
+      });
+    });
+});
+
 gulp.task('watch',function(){
   gulp.watch('src/js/**/*.js',['scripts']);
 });
 
 gulp.task('default',['scripts','watch']);
-gulp.task('build',['export']);
+gulp.task('build',['stealBuild']);
